@@ -15,9 +15,8 @@ public class RetoFinalApplication implements CommandLineRunner {
         SpringApplication.run(RetoFinalApplication.class, args);
     }
 
-
     @Override
     public void run(String... args) throws Exception {
-
+    productCrudRepository.deleteAll();
     }
 }
